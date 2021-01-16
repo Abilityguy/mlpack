@@ -142,10 +142,10 @@ If you are compiling Armadillo by hand, ensure that LAPACK and BLAS are enabled.
 
 ### 4. Building mlpack from source
 
-This document discusses how to build mlpack from source. These build directions 
+This document discusses how to build mlpack from source. These build directions
 will work for any Linux-like shell environment (for example Ubuntu, macOS,
-FreeBSD etc). However, mlpack is in the repositories of many Linux distributions 
-and so it may be easier to use the package manager for your system.  For example, 
+FreeBSD etc). However, mlpack is in the repositories of many Linux distributions
+and so it may be easier to use the package manager for your system.  For example,
 on Ubuntu, you can install the mlpack library and command-line executables (e.g.
 mlpack_pca, mlpack_kmeans etc.) with the following command:
 
@@ -183,7 +183,7 @@ sufficient.
 
 The next step is to run CMake to configure the project.  Running CMake is the
 equivalent to running `./configure` with autotools. If you run CMake with no
-options, it will configure the project to build with no debugging symbols and 
+options, it will configure the project to build with no debugging symbols and
 no profiling information:
 
     $ cmake ../
@@ -238,7 +238,7 @@ This will build all library components as well as 'mlpack_test'.
 
     $ make
 
-If you do not want to build everything in the library, individual components 
+If you do not want to build everything in the library, individual components
 of the build can be specified:
 
     $ make mlpack_pca mlpack_knn mlpack_kfn
@@ -251,7 +251,7 @@ and submit an issue. The mlpack developers will quickly help you figure it out:
 Alternately, mlpack help can be found in IRC at `#mlpack` on chat.freenode.net.
 
 If you wish to install mlpack to `/usr/local/include/mlpack/`, `/usr/local/lib/`,
-and `/usr/local/bin/`, make sure you have root privileges (or write permissions 
+and `/usr/local/bin/`, make sure you have root privileges (or write permissions
 to those three directories), and simply type
 
     $ make install
